@@ -28,10 +28,15 @@ namespace ConsoleApp3
 
         public string RagnarIntroduksjon()
         {
-            return $"Karakteren du skal spille med, er {Navn}./n" +
-                   $"Du starter med {Liv} i helse, altså fullt. /n"    +
-                   $"{Navn} har også et skjold, det gir deg {Skjold} i beskyttelse. /n" +
+            return $"Karakteren du skal spille med, er {Navn}.\n" +
+                   $"Du starter med {Liv} i helse, altså fullt. \n"    +
+                   $"{Navn} har også et skjold, det gir deg {Skjold} i beskyttelse. \n" +
                    $"Du har litt mat med deg i ryggsekken. Den gir deg {Mat} ekstra på helsa.";
+        }
+
+        public void useShield()
+        {
+
         }
     }
 }

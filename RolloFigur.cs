@@ -23,9 +23,9 @@ namespace ConsoleApp3
 
         public string RolloIntroduksjon()
         {
-       return $"Den du skal spille mot, er {Navn}./n" +
-       $"Han starter med {Liv} i helse. /n" +
-       $"{Navn} har også et skjold, det gir deg {Skjold} i beskyttelse. /n" +
+       return $"Den du skal spille mot, er {Navn}.\n" +
+       $"Han starter med {Liv} i helse. \n" +
+       $"{Navn} har også et skjold, det gir deg {Skjold} i beskyttelse. \n" +
        $"Han har med litt mat i ryggsekken. Den gir han {Mat} ekstra på helsa.";
 
         }
