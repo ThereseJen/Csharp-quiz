@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace ConsoleApp3
@@ -38,31 +39,20 @@ namespace ConsoleApp3
             Console.WriteLine("\n");
             Console.WriteLine("Trykk \"enter\" når du har lest!");
             Console.ReadLine();
-            Console.Clear();
+            Console.Clear()
 
+                var userInput = Console.ReadLine();
+
+         while (helt.Liv > 0 && fiende.Liv > 0)  //For at spillet skal fortsette helt til en er beseiret. 
+            {
+
+
+
+            }
+         
         }
 
-
-
-        private static void Attack(RagnarFigur attacker, RolloFigur enemy)
-        {
-            int damage = new Random().Next(5, 16);      //Genererer random skade mellom 5 og 15.
-            Console.WriteLine($"{attacker.Navn} angriper {enemy.Navn}, og gjør {damage} skade.");
-
-         enemy.Liv -= damage;
-
-            if (enemy.Liv <= 0)
-            {
-                Console.WriteLine($"{enemy.Navn} er beseiret!");
-            }
-
-            attacker.Liv -= damage;
-
-            if (attacker.Liv <= 0)
-            {
-                Console.WriteLine($"{attacker.Navn} er død. GAME OVER.");
-            }
                     
-        }
+        
     }
 }
