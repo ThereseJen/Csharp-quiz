@@ -39,12 +39,19 @@ namespace ConsoleApp3
             Console.WriteLine("\n");
             Console.WriteLine("Trykk \"enter\" når du har lest!");
             Console.ReadLine();
-            Console.Clear()
+            Console.Clear();
 
                 var userInput = Console.ReadLine();
 
-         while (helt.Liv > 0 && fiende.Liv > 0)  //For at spillet skal fortsette helt til en er beseiret. 
+         while (helt.Liv > 0 && fiende.Liv > 0)  //While-løkke for at spillet skal fortsette helt til en er beseiret. 
             {
+                Console.WriteLine($"Din helse er {helt.Liv}");
+                Console.WriteLine($"Rollo sin helse er {fiende.Liv}.");
+                Console.WriteLine("Trykk Enter for å starte kampen!");
+                Console.Clear();
+
+                Console.WriteLine("1. Angrip med øks.");
+
 
 
 

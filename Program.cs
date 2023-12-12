@@ -13,6 +13,7 @@
             var userInput = Console.ReadLine();
             Console.Clear();
 
+            
             if (userInput == "1")
             {
                 QuizCategories.start();

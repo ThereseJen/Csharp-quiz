@@ -37,15 +37,15 @@ namespace ConsoleApp3
         public void useShield()
         {
             int shield = new Random().Next(10, 26);
-            Liv += shield; 
-            Console.WriteLine($"{Navn} brukte skjoldet sitt og helte {shield} i helse!")
+            Liv += shield;
+            Console.WriteLine($"{Navn} brukte skjoldet sitt og helte {shield} i helse!");
         }
 
         public void useFood()
         {
             int food = new Random().Next(10, 16);
             Liv += food;
-            Console.WriteLine($"{Navn} spiste mat og fikk {food} mer i helse!")
+            Console.WriteLine($"{Navn} spiste mat og fikk {food} mer i helse!");
         }
     }
 }
